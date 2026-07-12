@@ -16,6 +16,8 @@ Customer churn is one of the most expensive problems in telecom — acquiring a 
 - **Threshold tuned against an explicit business cost model**: a false-positive retention offer costs ~$100, while a missed churner costs ~$500. The default 0.5 threshold was replaced with **0.35** specifically to minimize total business cost, not just to maximize accuracy.
 - **SHAP-based explainability** turns model output into concrete retention actions — e.g., prioritizing outreach for month-to-month, fiber-optic, first-3-months customers, rather than a black-box risk score.
 
+![Feature importance of logestic model](images/Feature_importance.png)
+
 ---
 
 ## 🧠 Key Finding: Why the "best" model on paper wasn't the model we shipped
@@ -29,6 +31,8 @@ XGBoost scored highest during cross-validation, but **Logistic Regression genera
 | Random Forest | 0.7750 | 0.5697 | 0.6230 | 0.5951 | 0.8249 |
 | XGBoost | 0.7750 | 0.5711 | 0.6123 | 0.5910 | 0.8316 |
 
+![Performnace comparision of all models](images/model_performance_comparision.png)
+
 **Final selected model — Logistic Regression, threshold-tuned:**
 - ROC-AUC: `0.8392`
 - Optimal Threshold: `0.35` (business-cost-minimizing, not default 0.5)
@@ -36,6 +40,7 @@ XGBoost scored highest during cross-validation, but **Logistic Regression genera
 - Final Precision: `0.4514`
 - Final F1: `0.6056`
 
+![Confusion Matrix of final selected logestic model](images/confusion_matrix.png)
 > The threshold was intentionally lowered from the default 0.5 to 0.35 to maximize recall — in a retention context, catching a churner is worth far more than avoiding a false alarm.
 
 ---
