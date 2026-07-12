@@ -6,7 +6,9 @@ An end-to-end machine learning project that predicts whether a telecom customer 
 
 👉 **[Launch the Streamlit App](https://customer-churn-predictor-website.streamlit.app/)**
 
-![ROC AUC Curves of all models](images/ROC_AUC Curves.png)
+ROC AUC Curves if all models
+<img width="865" height="645" alt="ROC_AUC Curves" src="https://github.com/user-attachments/assets/7a30338c-3895-49df-93d6-ce6e326b8857" />
+
 
 ---
 
@@ -42,13 +44,13 @@ XGBoost scored highest during cross-validation, but **Logistic Regression genera
 - Final F1: `0.6056`
 
 ![Confusion Matrix of final selected logestic model](images/confusion_matrix.png)
+<img width="906" height="1030" alt="Feature _importance" src="https://github.com/user-attachments/assets/176d410c-7994-424f-aef9-a189c34ec1ef" />
+
 
 > The threshold was intentionally lowered from the default 0.5 to 0.35 to maximize recall — in a retention context, catching a churner is worth far more than avoiding a false alarm.
 
 ---
-![Feature importance of final selected logestic model](images/Feature_importance.png)
-## 🧪 ML Pipeline
-
+ML PIPLINE
 | Step | Description |
 |---|---|
 | 1 | Data Loading & Exploratory Data Analysis (EDA) |
