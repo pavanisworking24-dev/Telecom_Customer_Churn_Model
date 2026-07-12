@@ -44,6 +44,9 @@ XGBoost scored highest during cross-validation, but **Logistic Regression genera
 - Final F1: `0.6056`
 
 ![Confusion Matrix of final selected logestic model](images/confusion_matrix.png)
+
+Feature importaance of final selected logestic model 
+
 <img width="906" height="1030" alt="Feature _importance" src="https://github.com/user-attachments/assets/176d410c-7994-424f-aef9-a189c34ec1ef" />
 
 
