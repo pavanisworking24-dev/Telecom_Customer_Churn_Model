@@ -62,6 +62,7 @@ XGBoost scored highest during cross-validation, but **Logistic Regression genera
 | 11 | ROC-AUC · Precision-Recall · Business Cost Curves |
 | 12 | SHAP Interpretability |
 
+![ROC AUC Curves of all models ](images/ROC_AUC Curves.png)
 ---
 
 ## 🗂️ Repository Structure
